@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: rest-with-spring-boot-and-java-leonardo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db-curso-java-basico-udemy
+    username: leonardosilva
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #dialect: org.hibernate.dialect.PostgreSQLDialect não é necessário declarar esse dialect mais, o próprio spring pediu para remover
+    show-sql: false
+    open-in-view: false
